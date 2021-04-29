@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Form() {
+  const [inputNumber, setinputNumber] = useState("");
   return (
     <div>
       <form action="">

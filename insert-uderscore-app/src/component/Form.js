@@ -4,6 +4,9 @@ function Form() {
   const [inputNumber, setInputNumber] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (inputNumber) {
+      console.log(inputNumber);
+    }
   };
   return (
     <div>
@@ -12,6 +15,7 @@ function Form() {
           type="number"
           onChange={(e) => setInputNumber(e.target.value)}
           value={inputNumber}
+          required
         />
         <button type="submit">Add</button>
       </form>

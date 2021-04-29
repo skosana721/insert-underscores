@@ -25,15 +25,21 @@ function Form() {
   return (
     <div>
       <form onSubmit={handleSubmit}>
+        <label htmlFor="number">Enter numbers</label>
         <input
           type="number"
           onChange={(e) => setInputNumber(e.target.value)}
+          id="number"
           value={inputNumber}
           required
         />
         <button type="submit">Add</button>
       </form>
-      {results}
+      {results && (
+        <h2>
+          Here is your output <span>{results}</span>
+        </h2>
+      )}
     </div>
   );
 }

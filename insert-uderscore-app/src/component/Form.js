@@ -36,9 +36,10 @@ function Form() {
         <button type="submit">Add</button>
       </form>
       {results && (
-        <h2>
-          Here is your output <span>{results}</span>
-        </h2>
+        <span>
+          {" "}
+          Here is your output <h2>{results}</h2>
+        </span>
       )}
     </div>
   );

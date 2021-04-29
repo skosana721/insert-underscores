@@ -12,3 +12,36 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 3rem auto;
+  padding: 3rem 1.5rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem black;
+  border-radius: 0.5rem;
+}
+form input {
+  padding: 0.4rem 0;
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+form label {
+  font-weight: bold;
+}
+form button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  margin-top: 1rem;
+}
+form button:hover {
+  background-color: gray;
+  color: black;
+}

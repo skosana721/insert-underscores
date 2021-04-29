@@ -2,9 +2,12 @@ import React, { useState } from "react";
 
 function Form() {
   const [inputNumber, setInputNumber] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div>
-      <form action="">
+      <form onSubmit={handleSubmit}>
         <input
           type="number"
           onChange={(e) => setInputNumber(e.target.value)}

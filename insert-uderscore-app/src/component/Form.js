@@ -2,11 +2,25 @@ import React, { useState } from "react";
 
 function Form() {
   const [inputNumber, setInputNumber] = useState("");
+  const [results, setResults] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     if (inputNumber) {
-      console.log(inputNumber);
+      setResults(insertUnderScore(inputNumber));
     }
+  };
+  const insertUnderScore = (num) => {
+    let arr = num.split("");
+    for (let i in arr) {
+      if (
+        arr[i] % 2 !== 0 &&
+        arr.indexOf(arr[i]) !== 0 &&
+        arr.indexOf(arr[i]) !== arr.length - 1
+      ) {
+        arr[i] += "_";
+      }
+    }
+    return arr.join("");
   };
   return (
     <div>
@@ -19,6 +33,7 @@ function Form() {
         />
         <button type="submit">Add</button>
       </form>
+      {results}
     </div>
   );
 }

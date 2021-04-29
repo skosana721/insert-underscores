@@ -1,5 +1,5 @@
 # insert-underscores
 
-This is a react program that receives a number as input and inserts underscores (\_) after each two odd numbers.
+This is a react program that receives a number as input and inserts underscores '\_' after each two odd numbers.
 
-The program has a form with two input for the base and exponent and a button to calculate the power of the base based on the exponent that is inputted and it displays the results.
+To use the program you only input numbers you want and the program would insert underscore after two odd numbers and display the output.
